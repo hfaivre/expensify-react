@@ -35,13 +35,6 @@ export const fakeExpenses = descriptions.map((expense)=>{
 
 
 
-export const fakeExpensesWithId = fakeExpenses.map((expense)=>{
-	return {
-		id: uuid(),
-		...expense
-	}
-});
-
 
 
 
