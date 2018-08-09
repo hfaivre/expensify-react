@@ -2,14 +2,14 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
-const CSSExtract = new ExtractTextPlugin('style.css');
+const CSSExtract = new ExtractTextPlugin('styles.css');
 
 module.exports = (env) => {
 	const isProduction = env === 'production';
 	return {
 		entry : './src/app.js',
 		output: {
-			path : path.join(__dirname, 'public'),
+			path : path.join(__dirname, 'public', 'dist'),
 			filename : 'bundle.js'
 		},
 		module: {
@@ -45,7 +45,8 @@ module.exports = (env) => {
 		devtool: isProduction ? 'source-map': 'inline-source-map',
 		devServer:{
 			contentBase:path.join(__dirname, 'public'),
-			historyApiFallback:true //tells the dev-server to always serve index.html and let react router do the client side routing
+			historyApiFallback:true,
+			publicPath : '/dist/' //tells the dev-server to always serve index.html and let react router do the client side routing
 		}
 	}
 };

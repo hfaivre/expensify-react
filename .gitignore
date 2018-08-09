@@ -5,5 +5,5 @@ expensify-app.sublime-workspace
 package-lock.json
 public/bundle.js
 public/bundle.js.map
-public/style.css
-public/style.css.map
+public/styles.css
+public/styles.css.map
