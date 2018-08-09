@@ -3,3 +3,7 @@ expensify-app.sublime-project
 expensify-app.sublime-workspace
 .DS_store
 package-lock.json
+public/bundle.js
+public/bundle.js.map
+public/style.css
+public/style.css.map
