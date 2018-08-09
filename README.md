@@ -5,7 +5,7 @@ Simple React-Redux application built as part of a Udemy course : [The Complete R
 
 ## Live Demo
 
-To see the live app, go to //TODO
+To see the live app, click [here](https://murmuring-brook-81659.herokuapp.com/)
 
 
 ## Features and functionalities
