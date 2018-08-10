@@ -6,7 +6,6 @@ import configureStore from './store/configureStore';
 import { startAddExpense, startSetExpenses } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
-import {fakeExpenses} from './seeders/seedExpenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
@@ -14,12 +13,6 @@ import './firebase/firebase';
 
 const store = configureStore();
 
-//Seeding with fake data
-const expenses = fakeExpenses;
-
-expenses.forEach((expense)=>{
-	store.dispatch(startAddExpense(expense));
-});
 
 const jsx = (
   <Provider store={store}>
