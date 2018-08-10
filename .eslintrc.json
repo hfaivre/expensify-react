@@ -3,13 +3,13 @@
         "browser": true,
         "es6": true,
         "jest/globals": true
-    },
+            },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
             "jsx": true
         },
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
     "plugins": [
@@ -17,10 +17,7 @@
         "jest"
     ],
     "rules": {
-        "indent": [
-            "error",
-            "space"
-        ],
+       
         "linebreak-style": [
             "error",
             "unix"
